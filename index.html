@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="css.css">
+    <link rel="shortcut icon" href="Registro.png" class="img/x-icon">
+</head>
+
+<body class="bg2">
+    <nav class="navbar bg">
+        <div class="container-fluid">
+            <a class="navbar-brand">
+                <img src="Registro.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                <b>Formulario de Registro</b>
+            </a>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="card border-dark m-3">
+                    <div class="card-header bg"><b>Registro de Usuarios</b></div>
+                    <div class="card-body">
+                        <input class="form-control my-1 border-dark" placeholder="Ingrese Apellido" type="text"
+                            id="apellido">
+                        <input class="form-control my-1 border-dark" placeholder="Ingrese Nombre" type="text"
+                            id="nombre">
+                        <select class="form-select my-1 border-dark" id="tipo">
+                            <option selected>Seleccione tipo Documento</option>
+                            <option value="CC">Cédula</option>
+                            <option value="TI">Tarjeta de Identidad</option>
+                            <option value="P">Pasaporte</option>
+                            <option value="CE">Cédula de Extranjería</option>
+                        </select>
+                        <input class="form-control my-1 border-dark" placeholder="Número de Documento" type="number"
+                            id="documento">
+                        <input class="form-control my-1 border-dark" placeholder="Ciudad de Residencia" type="text"
+                            id="ciudad">
+                        <input class="form-control my-1 border-dark" placeholder="Ingrese Dirección" type="text"
+                            id="direccion">
+                        <input class="form-control my-1 border-dark" placeholder="Número de Télefono" type="number"
+                            id="telefono">
+                        <input class="form-control my-1 border-dark" placeholder="Correo Electrónico" type="email"
+                            id="correo">
+                        <button class="btn btn-outline-dark bg mt-2" onclick="registrar()"><b>Registrar</b></button>
+                        <button class="btn btn-outline-dark bg float-end mt-2" onclick="listar()"><b>Listar</b></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <table class="table border-dark bg table-fluid me-3 mt-3">
+                    <thead>
+                        <th>Apellido</th>
+                        <th>Nombre</th>
+                        <th>Tipo Doc</th>
+                        <th>Núm Documento</th>
+                    </thead>
+                    <tbody id="tregistros" class="lp"></tbody>
+                </table>
+                <table class="table border-dark bg table-fluid me-3 mt-3">
+                    <thead>
+                        <th>Ciudad</th>
+                        <th>Dirección</th>
+                        <th>Télefono</th>
+                        <th>Correo</th>
+                    </thead>
+                    <tbody id="tregistros2" class="lp"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="js.js"></script>
+</body>
+
+</html>
