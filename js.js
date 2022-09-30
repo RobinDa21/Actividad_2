@@ -83,7 +83,7 @@ const registrar = () => {
     let tbody2 = document.getElementById('tregistros2')
     tbody.innerHTML += "<tr><td>" + apellido + "</td><td>" + nombre + "</td><td>" + tipo + "</td><td>" + documento + "</td></tr>"
     tbody2.innerHTML += "<tr><td>" + ciudad + "</td><td>" + direccion + "</td><td>" + telefono + "</td><td>" + correo + "</td></tr>"
-    const nuevo = { apellido: apellido, nombre: nombre, tipo_documento: tipo, número_documento: documento, ciudad: ciudad, direccion: direccion, télefono: telefono, correo: correo }
+    const nuevo = { apellido: apellido, nombre: nombre, tipo_documento: tipo, número_documento: documento, ciudad: ciudad, dirección: direccion, télefono: telefono, correo: correo }
     json.push(nuevo)
 }
 
