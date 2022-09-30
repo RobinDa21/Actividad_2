@@ -74,7 +74,7 @@ const registrar = () => {
     }
     for (let i = 0; i < json.length; i++) {
         const elemento = json[i]
-        if (elemento.tipo_documento == documento && elemento.tipo_documento == tipo) {
+        if (elemento.tipo_documento == tipo && elemento.número_documento == documento) {
             alert('Registro ya ingresado')
             return
         }
