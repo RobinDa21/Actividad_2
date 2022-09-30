@@ -74,7 +74,7 @@ const registrar = () => {
     }
     for (let i = 0; i < json.length; i++) {
         const elemento = json[i]
-        if (elemento.número_documento == documento) {
+        if (elemento.número_documento == documento || elemento.correo == correo) {
             alert('Registro ya ingresado')
             return
         }
